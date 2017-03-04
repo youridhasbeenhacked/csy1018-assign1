@@ -1,0 +1,163 @@
+body{margin: 0; padding: 0}
+h2
+{
+	color:#cc9c80;
+	padding: 0 2%;
+	text-shadow: 3px 3px 2px black;
+	text-decoration: underline;
+}
+.mail
+{
+	text-decoration:none;
+	color:#cc9c80;
+}
+.lg
+{
+  color:#62060f;
+  font-weight: bold;
+  font-family:"Courier New", Courier, monospace;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #222;
+}
+.lgg
+{
+  color:#62060f;
+  font-weight: bold;
+  font-family:"Courier New", Courier, monospace;
+  font-size: 20px;
+}
+.mli:hover
+{
+	background-image:url(file:///E|/csy1018-assign1/images/menubar1.jpg);
+}
+header
+{
+  width: 100%;
+  height: 400px;
+}
+.w
+{
+  width: 100%;
+  height: 100%;
+}
+.nav
+{
+  width: 100%;
+  height: 45px;
+  /*background:#cbc448;*/
+  background-image:url(file:///E|/csy1018-assign1/images/menubar.jpg);
+  box-shadow:3px 3px 7px black;
+}
+.nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav ul li
+{
+  padding: 0 1.5%;
+  line-height: 45px;
+}
+.nav ul li a
+{
+  color:#62060f;
+  font-weight: bold;
+  font-family:"Courier New", Courier, monospace;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #222;
+  text-decoration: none;
+}
+section
+{
+  width: 80%;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.article
+{
+  width: 32%;
+  height: 90%;
+  margin-top: 1.3%;
+  text-align: justify;
+}
+.article1
+{
+  width: 22%;
+  height: 90%;
+  margin-top: 1.3%;
+  text-align: justify;
+  box-shadow: 7px 7px 6px #404040;
+}
+footer
+{
+  width: 100%;
+  height: 30px;
+  background-color:#023952;
+}
+.ps
+{
+	color:#356c85;
+	font-family:"Courier New", Courier, monospace;
+	font-size:15px;
+	padding:0 1%;
+	font-weight:bold;
+}
+h1
+{
+  padding:0 1%;
+  color:#1c5a76;
+  text-shadow:2px 2px 2px black;
+  font-family:"Bookman Old Style", "Comic Sans MS";
+}
+.myj
+{
+	width:100%;
+	height:100%;
+}
+.ft
+{
+	margin:0;
+	padding:0;
+	text-align:center;
+	font-family:"Cordia New";
+	font-size:24px;
+	font-weight:bold;
+	color:#cc9c80;
+	line-height:30px;
+}
+.links
+{
+	margin: 0 auto;
+	padding: 0;
+  width: 100%;
+  height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #012433;
+}
+.box1
+{
+	width: 30%;
+	height: 90%;
+	margin: 1% 0;
+}
+.box1 ul
+{
+	list-style-type:square;
+}
+.box1 ul li a
+{
+	padding: 2%;
+	color: #b3c8d1;
+	font-size:15px;
+	font-weight: bold;
+	font-family: cursive;
+}
