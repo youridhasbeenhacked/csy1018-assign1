@@ -1,3 +1,6 @@
+/*NAME: SAHIL RAJBHANDARI
+UN ID: 16418509*/
+
 body{margin: 0; padding: 0}
 h2
 {
@@ -184,8 +187,6 @@ h1
 {
 	width: 100%;
 	height: 10%;
-	background-color: #9dae99;
-	border-radius: 30px 30px 0 0;
 }
 .desc
 {
@@ -228,4 +229,94 @@ h1
 	font-family: Cordia New;
 	font-weight: bold;
 	padding: 1%;
+}
+
+
+/*FROM HERE BEGINS THE CSS FOR contact.html*/
+
+.socmed
+{
+	background-color: white;
+	margin-top: 1%;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.sm
+{
+	width: 40px;
+	height: 100%;
+}
+.sm:hover
+{
+	opacity: 0.8;
+}
+.fbh
+{
+	margin: 0 0.3%;
+}
+.forms
+{
+	margin-bottom: 1%;
+	margin-top: 1%;
+	width: 90%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+}
+.fhead
+{
+	width: 100%;
+	height: 20%;
+	background-color:#3b3257;
+}
+.cred
+{
+	line-height: 60px;
+	text-shadow: 3px 3px 2px black;
+	font-weight: bold;
+	color: #d9a595;
+}
+.formdiv
+{
+	height: 70%;
+	width: 100%;
+}
+.ttt
+{
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+}
+table
+{
+	padding: 3% 0 0 3%;
+}
+.tlt
+{
+	font-size: 20px;
+	line-height: 45px;
+	font-family: Cordia New;
+	font-size: 26px;
+	font-weight: bolder;
+}
+.btn
+{
+	width: 300px;
+	height: 40px;
+}
+.note
+{
+		width: 100%;
+		height: 10%;
+}
+.notep
+{
+	font-size: 22px;
+	font-family: Cordia New;
+	line-height: 10%;
+	font-style: italic;
+	padding: 0 0 0 1% ;
 }
