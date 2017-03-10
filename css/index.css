@@ -343,6 +343,9 @@ and 1% from left. the texts are bold and italic*/
 
 /*FROM HERE BEGINS THE CSS FOR bio.html*/
 
+/*this is the section for bio.html. the section has top and bottom margin of 1% each
+and total width is set 90%. the contents within the div is arranged in column using
+flex property.*/
 .biosec
 {
 	margin-top: 1%;
@@ -351,6 +354,9 @@ and 1% from left. the texts are bold and italic*/
 	display: flex;
 	flex-direction: column;
 }
+
+/*this is the div for heading title of the section.it has box shadow of 3px each
+from horizontal and vertical and 2px opacity in black color.*/
 .heading
 {
 	width: 100%;
@@ -358,26 +364,38 @@ and 1% from left. the texts are bold and italic*/
 	box-shadow: 3px 3px 2px black;
 
 }
+
+/*.bioh is class provided to the text in the heading div. the text have no decorations.
+the text is made bold with color.*/
 .bioh
 {
 	text-decoration: none;
 	color:#cfcfd7;
 	font-weight: bold
 }
+
+/*it is another div inside section. the margin is set 0.5% from teh top and the
+elements inside this div are arranged in row using flex property.*/
 .desc
 {
 	margin-top: 0.5%;
 	display: flex;
 	flex-direction: row;
 }
+
+/*this is a div for image*/
 .pic
 {
 	width: 25.2%;
 }
+
+/*This is the div for description.*/
 .tet
 {
 	width: 74.8%;
 }
+
+/*this is class for paragraph whose texts are 20px large, fold and justified position.*/
 .biop
 {
 	font-family: Cordia New;
@@ -387,15 +405,23 @@ and 1% from left. the texts are bold and italic*/
 	font-weight: bold;
 	text-align: justify;
 }
+
+/*this is div for description too.*/
 .findesc
 {
 	width: 100%;
 }
+
+/*this is the image class*/
 .imp{
 	width: 100%;
 }
 
 /*FROM HERE BEGINS CSS FOR cv.html*/
+
+/*this is the section part of cv.html. the section has top and bottom margin of 1%.
+the width of the section is 80% and the divs inside it are arranged in column using
+flex property.*/
 .cvsec
 {
 	margin-top: 1%;
@@ -404,85 +430,124 @@ and 1% from left. the texts are bold and italic*/
 	display: flex;
 	flex-direction: row;
 }
+
+/*this is a div inside section div in the left side of the div with the width of 30%
+of the parent div.*/
 .leftsec
 {
 	width: 30%;
 }
+
+/*this is a div inside section div in the right side of the div with the width of 70%
+of the parent div. the contents inside this div are arranged in column using flex property.*/
 .rightsec
 {
 	width: 70%;
 	display: flex;
 	flex-direction: column;
 }
+
+/*this is the top part of the div rightsec*/
 .righttop
 {
 	width: 100%;
 	background-color: #012433;
 }
+
+/*this is the bottom part of the div rightsec*/
 .rightbtm
 {
 	width: 100%;
 }
+
+/*this is the class for images in the rightsec and leftsec*/
 .imgcv
 {
 	width: 100%;
 }
 
+
 /*media query is used inroder to make the website responsive*/
 
+/*the website's responsiveness is maintained when the max-width is 600px*/
+@media (max-width:600px){
 
-@media all and (max-width:600px){
+	/*the header part will have a height of 50% of the browser*/
 	header
 	{
 		height: 50%;
 	}
+
+	/*the lists in the .nav will be displayed in column*/
 	.nav ul{
 		flex-direction: column;
 		text-align: center;
 	}
+
+	/*the lists will have a solid bottom border of 1px in black color*/
 	.nav ul li {
 			border-bottom: 1px solid black;
 	}
+
+	/*the list with the class .lg is underlined*/
 	.lg{
 		text-decoration: underline;
 	}
+
+	/*the list with the class .lgg is not displayed when the max-width is 600px;*/
 	.lgg{
 		display: none;
 	}
+
+	/*on hovering over the elements within anchor tag inside list, the color of
+	the text  changes to white.*/
 	.nav ul li a:hover
 	{
 		color: white;
 	}
+
+	/*the elements of the section is displayed in column*/
 	section
 	{
 		flex-direction: column;
 	}
+
+	/*the div with class .article will have with of 100% (i.e.600px)*/
 	.article
 	{
 		width: 100%;
 	}
+
+
+	/*the footer's width is set 100%*/
 	footer
 	{
 		width: 100%;
 	}
+
+	/*the elements within the div with the class .links will be displayed in column.*/
 	.links
 	{
 		flex-direction: column;
 	}
-	.box1
-	{
 
-	}
+	/*the section part of bio.html has margin of 1% and elements within it are
+	displayed in column*/
 	.biosec
 	{
 		flex-direction: column;
 		width: 100%;
 		margin-top: 1%;
 	}
+
+	/*the div with the class heading has width of 100%*/
 	.heading
 	{
 		width: 100%;
 	}
+
+	/*the paragraph will be of 100% width and margin of 1% is goven from top and the
+	font size is 20px;*/
 	.biop
 	{
 		width: 100%;
@@ -490,50 +555,72 @@ and 1% from left. the texts are bold and italic*/
 		padding: 0;
 		font-size: 20px;
 	}
+
+	/*the elements inside the div is displayed in column*/
 	.desc
 	{
 		flex-direction: column;
 	}
 
+	/*the div will have width of 100%*/
 	.tet
 	{
 		width: 100%;
 	}
+
+	/*the div will have 100% width*/
 	.forms
 	{
 		width: 100%;
 	}
+
+	/*the table heading is not displayed*/
 	th
 	{
 		display: none;
 	}
+
+	/*all table datas with class .ttt will have text-field width of 250px and text
+	is aligned center.*/
 	.ttt
 	{
 		width: 250px;
 		text-align: center;
 	}
+
+	/*the button with the class .btn will have width of 250px and height 40px;*/
 	.btn{
 		width: 250px;
 		height: 40px;
 	}
+
+	/*the div socmed of cv.html wil have top margin of 2%*/
 	.socmed{
 		margin-top: 2%;
 	}
+
+	/*the section of cv with class .cv will have its elements alligned in column*/
 	.cvsec
 	{
 		flex-direction: column;
 		width: 100%;
 	}
+
+	/*the div will have width 90% and margin 2% from top*/
 	.leftsec
 	{
 		width: 90%;
 		margin-top: 2%;
 	}
+
+	/*the div will have width of 100% and top margin 1.5%.*/
 	.rightsec
 	{
 		width: 100%;
 		margin-top: 1.5%;
 	}
+
+	/*this div will have margin of 1% from the top.*/
 	.rightbtm
 	{
 		margin-top: 1%;
@@ -550,37 +637,56 @@ and 1% from left. the texts are bold and italic*/
 
 
 @media (max-width:1322px){
+
+	/*the elements of the section is displayed in column*/
 	section
 	{
 		flex-direction: column;
 	}
+
+	/*the div will have 100% width*/
 	.article
 	{
 		width: 100%;
 	}
+
+	/*this div is not dispayed*/
 	.article1{
 	display: none;
 	}
+
+	/*the elements within the div with the class .links will be displayed in column.*/
 	.links
 	{
 		flex-direction: column;
 	}
+
+	/*the div with the class .box1 will possess 2px solid black color border at
+	the bottom of the div.*/
 	.box1
 	{
-		border-bottom: 2px solid #000;
+		border-bottom: 2px solid black;
 		width: 100%;
 		margin: 0;
 	}
+
+	/*the section part of bio.html has margin of 1% and elements within it are
+	displayed in column*/
 	.biosec
 	{
 		flex-direction: column;
 		width: 100%;
 		margin-top: 1%;
 	}
+
+	/*the div with the class heading has width of 100%*/
 	.heading
 	{
 		width: 100%;
 	}
+
+	/*the paragraph will be of 100% width and margin of 1% is goven from top and the
+	font size is 20px;*/
 	.biop
 	{
 		width: 100%;
@@ -588,15 +694,21 @@ and 1% from left. the texts are bold and italic*/
 		padding: 0;
 		font-size: 20px;
 	}
+
+	/*the elements inside the div is displayed in column*/
 	.desc
 	{
 		flex-direction: column;
 	}
+
+	/*the div with the class .pic will have margin 1% from top and 35% from left*/
 	.pic
 	{
 		margin-top: 1%;
 		margin-left: 35%;
 	}
+
+	/*the div will have width of 100%*/
 	.tet
 	{
 		width: 100%;
