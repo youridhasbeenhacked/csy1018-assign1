@@ -1,213 +1,122 @@
-/*NAME: SAHIL RAJBHANDARI
-UN ID: 16418509*/
+/*CSS for index.html*/
 
-/*Margin and Padding property of BODY of the website is set to 0*/
-body{margin: 0; padding: 0}
-
-/*All the Heading h2 are inserted following properties. Padding of 2% from sides
-are given and text shadow of 3px each from horizontal and vertical is provided with
-2px oopacity. The text within this heading has been underlined.*/
-h2
-{
-	color:#cc9c80;
-	padding: 0 2%;
-	text-shadow: 3px 3px 2px black;
-	text-decoration: underline;
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
 }
-
-/*.mail is the class provided  to anchor tag in a paragraph to modify.
-	its properties.The default text decoration of underline has been removed and
-	new color has been given*/
-.mail
-{
-	text-decoration:none;
-	color:#cc9c80;
-}
-
-/*The list with class .lg in the navigation bar are given below mentioned properties.
-The text is made to be bold with text-shadow of 2px each from horizontal and vertical
-and 2px opacity of the text shadow in dark grey color.*/
-.lg
-{
-  color:#62060f;
-  font-weight: bold;
-  font-family:"Courier New", Courier, monospace;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px #222;
-}
-
-/*The list with class .lgg in the navigation bar are given below mentioned properties.
-The text is made to be bold without any text-shadow.*/
-.lgg
-{
-  color:#62060f;
-  font-weight: bold;
-  font-family:"Courier New", Courier, monospace;
-  font-size: 20px;
-}
-
-/*On hovering over the .mli list class, the background of the clas changes */
-.mli:hover
-{
-	background:url(../images/menubar1.jpg);
-}
-/*The header is given width of 100% with 70% height.*/
 header
 {
-  width: 100%;
-	height: 70%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
 }
-
-/*.w is a class provided to the header image. It has been given width and height of 100%,
-which means the total width and height of header.*/
-.w
+header a
 {
-  width: 100%;
-  height: 100%;
+		margin: 0 0.5%;
 }
-
-/*.nav is the class for navigation bar div. It has width of 100% with background image
-and the div has been given box-shadow of 3px each from horizontal and vertical with 7px
-box-shadow opacity in black color.*/
-.nav
+.connect:hover
 {
-  width: 100%;
-  /*background:#cbc448;*/
-  background-image:url(../images/menubar.jpg);
-  box-shadow:3px 3px 7px black;
+	opacity: 0.7;
 }
-
-/*The unordered list within the .nav div has been assigned the properties. The list
-style none suggests no bullets. The flex direction row arranges the list items in row
-when the display is made flex. justify-content center functions to centralize the elements.*/
-.nav ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/*the list items within .nav div have padding top-bottom of 0.8% and sideways of 1.5%.*/
-.nav ul li
-{
-  padding: 0.8% 1.5%;
-}
-
-/*The links in the list are modified as below properties*/
-.nav ul li a
-{
-  color:#62060f;
-  font-weight: bold;
-  font-family:"Courier New", Courier, monospace;
-  font-size: 20px;
-  text-shadow: 2px 2px 2px #222;
-  text-decoration: none;
-}
-
-/*The main section of the website has a width of 80% with no margin and padding and the
-contents within it are displayed in row with the use of flex property.*/
-section
-{
-  width: 80%;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-	margin-top: 1%;
-	margin-bottom: 1%;
-}
-/*the width of the div is given 32% of section*/
-.article
-{
-	width: 32%;
-}
-/*the width of the div is given 22% of section*/
-.article1
-{
-	width: 22%;
-}
-/*the width of the image is given 100% of the .article1 div*/
-.imgm
+.banner
 {
 	width: 100%;
 }
-/*footer is the bottom most part of the page. it has full width with a background color*/
-footer
+.menu
 {
-  width: 100%;
-  background-color:#023952;
+	width: 100%;
+	margin-bottom: 1%;
+	background-image: url(../images/menubar.jpg);
+	box-shadow: 4px 4px 7px black;
+}
+.menu ul
+{
+	margin: 0;
+  padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+}
+.menu ul li
+{
+	padding: 1% 4%;
+}
+.menu ul li:hover
+{
+	background-image: url(../images/menubar1.jpg);
+}
+.menu ul li a
+{
+  color:black;
+  font-weight: bold;
+  font-family:"Courier New", Courier, monospace;
+  font-size: 20px;
+  text-shadow: 3px 3px 4px #222;
+  text-decoration: none;
+}
+section
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content
+{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.photo
+{
+	width: 20%;
+}
+.photo:hover{
+	opacity: 0.8;
+}
+.contentimg, .bannerimg, .imgbiog, .cvimg
+{
+	width: 100%;
+}
+.text
+{
+	width: 100%;
+	text-align: center;
+}
+.text p
+{
+	padding: 0 5%;
+	color: #264356;
 }
 
-/*.ps is a class given to paragraphs. all the paragraphs with ps class possess the following
-properties of color, padding of 1% from sides.*/
-.ps
+marquee
 {
-	color:#356c85;
-	font-family:"Courier New", Courier, monospace;
-	font-size:15px;
-	padding:0% 1%;
-	font-weight:bold;
+	color: red;
 }
-
-/*All the headings with h1 size are padded 1% from sideways and given text shadow
-of 2px wach horizontally and vertically and same pixels of opacity with black color.*/
-h1
-{
-  padding:0 1%;
-  color:#1c5a76;
-  text-shadow:2px 2px 2px black;
-  font-family:"Bookman Old Style", "Comic Sans MS";
-}
-/*.myj
-{
-	width:100%;
-	height:100%;
-}*/
-
-/*.ft is the class given to the paragraph in the footer. the text is padded 0.2%
-from top and bottom. the text is made bold and is aligned to center*/
-.ft
-{
-	margin:0;
-	padding:0.2% 0;
-	text-align:center;
-	font-family:"Cordia New";
-	font-size:24px;
-	font-weight:bold;
-	color:#cc9c80;
-}
-
-/*.links is the div above the footer section having 100% width and the contents
-inside this div are aligned in row and the extra space has been used in sides
-properly.*/
 .links
 {
-  width: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	background-color: #012433;
+	background-color:#081c28;
 }
-
-/*.box1 is the class given to all the three divs inside the .links div. each of
-theh three divs have with of 20% are margin of 1% from top and bottom.*/
 .box1
 {
 	width: 30%;
 	margin: 1% 0;
 }
-
-/*The lists inside the box have square bullets*/
 .box1 ul
 {
 	list-style-type:square;
 }
 
-/*All the objects in the anchor tag are padded 2% from all sides. and the underline
-decoration has been removed and the font size is set 17px;*/
 .box1 ul li a
 {
 	padding: 2%;
@@ -216,489 +125,506 @@ decoration has been removed and the font size is set 17px;*/
 	text-decoration: none;
 }
 
-/*the list items in the anchor tag on hovering changes in color to white.*/
 .box1 ul li a:hover
 {
 	color: white;
 }
-
-
-
-/*FROM HERE BEGINS THE CSS FOR contact.html*/
-
-/*this is the class given to the div and the div has been supplied margin of 1%
-from top adn 0.5% from bottom and the width of the div is 100%. the elements inside
-the div are centralized in a row with flex property.*/
-.socmed
+.box1 h2
 {
-	margin-top: 1%;
-	margin-bottom: 0.5%;
+	text-decoration: underline;
+	color: #cc9c80;
+	text-shadow: 3px 3px 4px black;
+}
+footer
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+footer p
+{
+	margin:0;
+	padding:0.2% 0;
+	text-align:center;
+	font-family:"Cordia New";
+	font-size:24px;
+	font-weight:bold;
+	color:#cc9c80;
+	background-color: black;
+}
+
+
+/*CSS FOR contacr.html*/
+.contactsection
+{
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.2%;
+	justify-content: center;
+}
+
+input
+{
+	padding: 1.2% 7%;
+	border-radius: 4px;
+}
+textarea{
+	border-radius: 4px;
+}
+legend
+{
+	font-family: Cordia New;
+	font-size: 34px;
+	font-weight: bolder;
+	color:#000f1e;
+}
+.submit
+{
+	padding: 1% 5%;
+	background-color: #506d47;
+	border: none;
+	border-radius: 3px;
+	font-family: Cordia New;
+	font-size:30px;
+	font-weight: bold;
+}
+.submit:hover
+{
+	box-shadow: 4px 4px 5px black;
+	padding: 1.5% 5.2%;
+	background-color: #4c7093;
+	text-shadow: 2px 2px 3px black;
+}
+fieldset
+{
+	border-radius: 5px;
+}
+.cont{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.headcon
+{
+	width: 100%;
+	height: 10%;
+}
+.headcon h2
+{
+	text-align: center;
+	text-shadow: 3px 3px 3px grey;
+	font-size: 30px;font-family: monospace;
+	color: black;
+}
+.headcon h2:hover
+{
+	color: #372c49;
+}
+.callandloc
+{
+	margin-bottom: 0.3%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-
-/*all the elemets within the anchor tag have amargin of 1% from the left side of each
-element.*/
-.socmed a
+.callandloc a
 {
-	margin-left: 1%;
+	margin: 0 0.2%;
 }
 
-/*.sm is the class given to the divs inside the .socmed div. hovering over it
-changes its opacity to 0.7*/
-.sm:hover
+.call:hover
 {
-	opacity: 0.7;
-}
-
-/*this div has a width of 90% and margin from top and bottom as 0.1% and 1% respectibely.
-the ither elements inside this div are arranged in column.*/
-.forms
-{
-	width: 90%;
-	margin-top: 0.1%;
-	margin-bottom: 1%;
-	display: flex;
-	flex-direction: column;
-}
-
-/*this is a div inside .forms . it has width of 100% of .forms (i.e.90%)*/
-.fhead
-{
-	width: 100%;
-	background-color: #012433;
-}
-
-/*.cont is a class for heading which is provided the color, no decorations and
-the bold weight of font.*/
-.cont
-{
-	text-decoration: none;
-	color:#cfcfd7;
-	font-weight: bold
-}
-
-/*it is the div for login form inside a table. the div has a margin of 1% and 0.5%
-from top and bottom respectively.the div has 100% width and the texts inside the div are padded from left 2%.*/
-.formdiv
-{
-	margin-top: 1%;
-	margin-bottom: 0.5%;
-	width: 100%;
-	padding-left: 2%;
-}
-
-/*it is the class provide for the table data. the text-field has with of 300px and
-line height of 30px.*/
-.ttt
-{
-	width: 300px;
-	line-height: 30px;
-}
-
-/*it is the class provided for the table headings. the texts are 34px large and bold.*/
-.tlt
-{
-	font-family: Cordia New;
-	font-size: 24px;
-	font-weight: bold;
-}
-
-/*this is the class provide for the submit button in the form. this is width and height
-of 300px and 50px respectively and the text within the button is 20px large.*/
-.btn
-{
-	width: 300px;
- 	height: 50px;
-	font-size: 20px;
-}
-
-/*on hovering over the button with class .btn, the opacity reduces to 0.8% from 1%*/
-.btn:hover{
 	opacity: 0.8;
 }
 
-/*.note is a class provided to  div below the .formdiv. this div has width of 100%;*/
-.note{
-	width: 100%;
-}
 
-/*this class had been assigned to the paragraph inside the div with class .note
-inorder to modify the texts. the texts are provided with padding od 0.2% from top
-and 1% from left. the texts are bold and italic*/
-.notep
+/*CSS FOR bio.html*/
+
+.biosection
 {
-	padding:0.2% 0 0 1%;
-	font-weight: bold;
-	font-style: italic;
-	color: #48130f;
-}
-
-
-/*FROM HERE BEGINS THE CSS FOR bio.html*/
-
-/*this is the section for bio.html. the section has top and bottom margin of 1% each
-and total width is set 90%. the contents within the div is arranged in column using
-flex property.*/
-.biosec
-{
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin: 0 auto;
+	margin-bottom: 2%;
 	width: 90%;
 	display: flex;
 	flex-direction: column;
 }
-
-/*this is the div for heading title of the section.it has box shadow of 3px each
-from horizontal and vertical and 2px opacity in black color.*/
-.heading
+.biohead
 {
 	width: 100%;
-	background-color:#012433;
-	box-shadow: 3px 3px 2px black;
-
+	text-align: center;
 }
 
-/*.bioh is class provided to the text in the heading div. the text have no decorations.
-the text is made bold with color.*/
-.bioh
+.biohead h2:hover
 {
-	text-decoration: none;
-	color:#cfcfd7;
-	font-weight: bold
+	color: tomato;
 }
-
-/*it is another div inside section. the margin is set 0.5% from teh top and the
-elements inside this div are arranged in row using flex property.*/
-.desc
+.biointro
 {
-	margin-top: 0.5%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-}
 
-/*this is a div for image*/
-.pic
-{
-	width: 25.2%;
 }
-
-/*This is the div for description.*/
-.tet
+.imgbio:hover
 {
-	width: 74.8%;
+	opacity: 0.8;
 }
-
-/*this is class for paragraph whose texts are 20px large, fold and justified position.*/
-.biop
+.imgbio
 {
-	font-family: Cordia New;
-	padding: 1%;
-	color:#461919;
-	font-size: 20px;
-	font-weight: bold;
+	width: 23%;
+	border: 1px solid grey;
+	box-shadow:3px 3px 3px grey;
+}
+.texts
+{
+	width: 77%;
 	text-align: justify;
 }
-
-/*this is div for description too.*/
-.findesc
-{
-	width: 100%;
+.texts p{
+	padding: 0.3% 3% 0% 3%;
+	color: #372c49;
 }
-
-/*this is the image class*/
-.imp{
-	width: 100%;
+.texts p:hover{
+	color: #7f5b11;
 }
-
-/*FROM HERE BEGINS CSS FOR cv.html*/
-
-/*this is the section part of cv.html. the section has top and bottom margin of 1%.
-the width of the section is 80% and the divs inside it are arranged in column using
-flex property.*/
-.cvsec
+.bottombio
 {
 	margin-top: 1%;
-	margin-bottom: 1%;
-	width: 80%;
-	display: flex;
-	flex-direction: row;
+	width: 100%;
+	border-top: 1px solid grey;
+}
+.bottombio h2, .biohead h2
+{
+	text-align: center;
+	font-family: Cordia New;
+	font-size: 30px;
+	color:#201d25
+}
+.bottombio p{
+	text-align: center;
+	color: #201d25;
+}
+.bottombio p:hover, .bottombio h2:hover{
+	color: #993232;
 }
 
-/*this is a div inside section div in the left side of the div with the width of 30%
-of the parent div.*/
-.leftsec
+
+/*CSS for cv.html*/
+
+.cvsec
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1%;
+}
+.cvhead
+{
+	box-shadow: 4px 4px 4px black;
+	width: 100%;
+	background: #081c28;
+}
+.cvsec h2
+{
+	font-size: 30px;
+	color: white;
+	text-shadow: 4px 4px 2px black;
+	padding: 0 0 0 2%;
+}
+.cvcont
+{
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1.5%;
+}
+.cvleft
+{
+	width: 70%;
+}
+.cvright
 {
 	width: 30%;
 }
-
-/*this is a div inside section div in the right side of the div with the width of 70%
-of the parent div. the contents inside this div are arranged in column using flex property.*/
-.rightsec
+.cvleft h2
 {
-	width: 70%;
-	display: flex;
-	flex-direction: column;
+	font-size: 25px;
+	color: black;
+	text-shadow: none;
+	font-weight: bold;
+	text-decoration: underline;
 }
-
-/*this is the top part of the div rightsec*/
-.righttop
-{
-	width: 100%;
-	background-color: #012433;
-}
-
-/*this is the bottom part of the div rightsec*/
-.rightbtm
-{
-	width: 100%;
-}
-
-/*this is the class for images in the rightsec and leftsec*/
-.imgcv
-{
-	width: 100%;
+.cvleft p{
+	padding-left: 5%;
+	font-weight: bold;
 }
 
 
-/*media query is used inroder to make the website responsive*/
+/*Media Queries*/
 
-/*the website's responsiveness is maintained when the max-width is 600px*/
-@media (max-width:600px){
-
-	/*the header part will have a height of 50% of the browser*/
+@media (max-width:600px)
+{
 	header
 	{
-		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
 	}
-
-	/*the lists in the .nav will be displayed in column*/
-	.nav ul{
+	.banner{
+		width: 100%;
+	}
+	.menu
+	{
+		width: 100%;
+		box-shadow: none;
+		border-top: 1px solid black;
+	}
+	.menu ul
+	{
+		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
-
-	/*the lists will have a solid bottom border of 1px in black color*/
-	.nav ul li {
-			border-bottom: 1px solid black;
+	.menu ul li{
+		border-bottom: 1px solid black;
 	}
-
-	/*the list with the class .lg is underlined*/
-	.lg{
-		text-decoration: underline;
+	.menu ul li a{
+		font-size: 20px;
 	}
-
-	/*the list with the class .lgg is not displayed when the max-width is 600px;*/
-	.lgg{
-		display: none;
-	}
-
-	/*on hovering over the elements within anchor tag inside list, the color of
-	the text  changes to white.*/
-	.nav ul li a:hover
+	.menu ul li a:hover
 	{
 		color: white;
 	}
-
-	/*the elements of the section is displayed in column*/
 	section
 	{
+		width: 100%;
+		display: flex;
 		flex-direction: column;
 	}
-
-	/*the div with class .article will have with of 100% (i.e.600px)*/
-	.article
+	.content
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.photo
+	{
+		margin: 0 auto;
+		width: 50%;
+	}
+	.contentimg
 	{
 		width: 100%;
 	}
-	/*the div with class .article1 will have with of 100% (i.e.600px)*/
-	.article1
-	{
-		width: 100%;
-
+	.text p{
+		font-size: 16px;
+		text-align: justify;
 	}
-	/*the footer's width is set 100%*/
-	footer
-	{
-		width: 100%;
-	}
-
-	/*the elements within the div with the class .links will be displayed in column.*/
 	.links
 	{
-		flex-direction: column;
-	}
-
-	/*the section part of bio.html has margin of 1% and elements within it are
-	displayed in column*/
-	.biosec
-	{
+		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-top: 1%;
 	}
-
-	/*the div with the class heading has width of 100%*/
-	.heading
+	.box1
 	{
 		width: 100%;
 	}
-
-	/*the paragraph will be of 100% width and margin of 1% is goven from top and the
-	font size is 20px;*/
-	.biop
+	.box1 h2
 	{
-		width: 100%;
-		margin-top: 1%;
-		padding: 0;
+		padding-left: 2%;
 		font-size: 20px;
 	}
 
-	/*the elements inside the div is displayed in column*/
-	.desc
+
+	.biosection
 	{
+		width: 100%;
+		display: flex;
 		flex-direction: column;
 	}
-
-	/*the div will have width of 100%*/
-	.tet
+	.biohead
 	{
 		width: 100%;
 	}
-
-	/*the div will have 100% width*/
-	.forms
+	.biointro
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.texts
 	{
 		width: 100%;
 	}
-
-	/*the table heading is not displayed*/
-	th
+	.imgbio
 	{
-		display: none;
+		margin:0 auto;
+		width: 45%;
 	}
-
-	/*all table datas with class .ttt will have text-field width of 250px and text
-	is aligned center.*/
-	.ttt
+	.bottombio
 	{
-		width: 250px;
+		width: 100%;
+	}
+	.bottombio p{
+		padding: 0 3%;
 		text-align: center;
 	}
 
-	/*the button with the class .btn will have width of 250px and height 40px;*/
-	.btn{
-		width: 250px;
-		height: 40px;
+
+	.cont{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.headcon
+	{
+		width: 100%;
+		background-color: #081c28;
+	}
+	.headcon h2
+	{
+		color: white;
+		text-shadow: 3px 3px 3px black;
+		font-size: 25px;
+	}
+	.contactsection
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around;;
+	}
+	textarea
+	{
+		width: 240px;
 	}
 
-	/*the div socmed of cv.html wil have top margin of 2%*/
-	.socmed{
-		margin-top: 2%;
-	}
 
-	/*the section of cv with class .cv will have its elements alligned in column*/
 	.cvsec
 	{
-		flex-direction: column;
 		width: 100%;
-	}
-
-	/*the div will have width 90% and margin 2% from top*/
-	.leftsec
-	{
-		width: 90%;
-		margin-top: 2%;
-	}
-
-	/*the div will have width of 100% and top margin 1.5%.*/
-	.rightsec
-	{
-		width: 100%;
-		margin-top: 1.5%;
-	}
-
-	/*this div will have margin of 1% from the top.*/
-	.rightbtm
-	{
-		margin-top: 1%;
-	}
-}
-
-
-@media (max-width:1322px){
-
-
-	/*the elements of the section is displayed in column*/
-	section
-	{
+		display: flex;
 		flex-direction: column;
 	}
-
-	/*the div will have 100% width*/
-	.article
+	.cvhead
 	{
 		width: 100%;
 	}
-
-	/*the elements within the div with the class .links will be displayed in column.*/
-	.links
+	.cvcont
 	{
-		flex-direction: column;
-	}
-
-	/*the div with the class .box1 will possess 2px solid black color border at
-	the bottom of the div.*/
-	.box1
-	{
-		border-bottom: 2px solid black;
 		width: 100%;
-		margin: 0;
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 6%;
 	}
-
-	/*the section part of bio.html has margin of 1% and elements within it are
-	displayed in column*/
-	.biosec
+	.cvright
 	{
-		flex-direction: column;
-		width: 100%;
-		margin-top: 1%;
+		width: 50%;
+		margin: 0 auto;
 	}
-
-	/*the div with the class heading has width of 100%*/
-	.heading
+	.cvleft
 	{
 		width: 100%;
 	}
-
-	/*the paragraph will be of 100% width and margin of 1% is goven from top and the
-	font size is 20px;*/
-	.biop
+	.cvsec h2
 	{
-		width: 100%;
-		margin-top: 1%;
-		padding: 0;
+		font-size: 22px;
+		text-align: center;
+	}
+	.cvleft h2{
 		font-size: 20px;
 	}
+	.cvleft p{
+		font-size: 16px;
+		text-align: center;
+		font-weight: normal;
+		color: black;
+	}
 
-	/*the elements inside the div is displayed in column*/
-	.desc
+}
+
+
+@media (min-width:601px) and (max-width:800px) {
+	.links
 	{
+		display: flex;
+		width: 100%;
 		flex-direction: column;
 	}
-
-	/*the div with the class .pic will have margin 1% from top and 35% from left*/
-	.pic
-	{
-		margin-top: 1%;
-		margin-left: 35%;
-	}
-
-	/*the div will have width of 100%*/
-	.tet
+	.box1
 	{
 		width: 100%;
 	}
+	.box1 h2
+	{
+		padding-left: 2%;
+		font-size: 21px;
+	}
 }
+
+	@media (max-width:1340px) and (min-width:601px)
+	{
+		.biosection
+		{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		.biohead
+		{
+			width: 100%;
+		}
+		.biointro
+		{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		.imgbio
+		{
+			margin:0 auto;
+			width: 30%;
+			border: none;
+			box-shadow: none;
+		}
+		.texts{
+			width: 100%;
+		}
+	}
+
+
+	@media (max-width:1130px) and (min-width:601px)
+	{
+		.cvsec
+		{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+		.cvhead
+		{
+			width: 100%;
+			text-align: center;
+		}
+		.cvcont
+		{
+			display: flex;
+			flex-direction: column-reverse;
+			width: 100%;
+		}
+		.cvright
+		{
+			margin: 0 auto;
+			width: 30%;
+		}
+		.cvleft
+		{
+			width: 100%;
+		}
+	}
