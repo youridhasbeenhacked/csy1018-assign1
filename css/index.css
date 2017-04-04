@@ -1,10 +1,18 @@
+/**
+Name: Sahil Rajbhandari
+UN ID: 16418509
+**/
+
 /*CSS for index.html*/
 
+/*The property gives background color to the body and no margin or padding*/
 body{
 	margin: 0;
 	padding: 0;
 	background-color: #f2f2f2;
 }
+/*The header has zero margin and padding, 100% width with black background.
+The contents within the header are displayed in row using flex property and aligned centrally.*/
 header
 {
 	margin: 0;
@@ -15,18 +23,24 @@ header
 	flex-direction: row;
 	justify-content:center;
 }
+/*The contents of anhor tag of header section has been given margin of 0.5% from sides and 0% from top and bottom*/
 header a
 {
 		margin: 0 0.5%;
 }
+/*On hovering the div with the class connect, the opacity reduces to 0.7*/
 .connect:hover
 {
 	opacity: 0.7;
 }
+/*The div with class banner is goven width of 100%*/
 .banner
 {
 	width: 100%;
 }
+/*The menubar div with class menu has 100% width with 1% margin from bottom and box-shadow
+of 4px each vertically and horizontally and 7px shadow opacity in black color and a background
+image as been provided.*/
 .menu
 {
 	width: 100%;
@@ -34,6 +48,8 @@ header a
 	background-image: url(../images/menubar.jpg);
 	box-shadow: 4px 4px 7px black;
 }
+/*The unordered list created within .menu div has no margins and paddings. The list items
+are displayed in row with flex property and aligned centrally.*/
 .menu ul
 {
 	margin: 0;
@@ -43,14 +59,19 @@ header a
 	list-style: none;
 	justify-content: center;
 }
+/*The list items are gien top and bottom padding of 1% and sideways padding of 4%.*/
 .menu ul li
 {
 	padding: 1% 4%;
 }
+/*On hovering the list items of .menu div, background image changes.*/
 .menu ul li:hover
 {
 	background-image: url(../images/menubar1.jpg);
 }
+/*All the items within the anchor tag under list of .menu div are of black color and bold font.
+The font family has been assigned with 20px font size and text shadow of 3px vertically and horizontally
+with 4px of shadow opacity in grey color.*/
 .menu ul li a
 {
   color:black;
@@ -60,12 +81,14 @@ header a
   text-shadow: 3px 3px 4px #222;
   text-decoration: none;
 }
+/*The section has a full width of 100% and the items within it are displayed in column with flex property.*/
 section
 {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
+/*The div with the class content has 100% width and the items within it are displayed in row centrally using flex property.*/
 .content
 {
 	width: 100%;
@@ -73,32 +96,39 @@ section
 	flex-direction: row;
 	justify-content: center;
 }
+/*The div with class photo has with of 20%.*/
 .photo
 {
 	width: 20%;
 }
+/*On hovering the div, the opacity reduces to 0.8*/
 .photo:hover{
 	opacity: 0.8;
 }
+/*The divs with the class contentimg, bannerimg, imgbiog and cvimg are given 100% width.*/
 .contentimg, .bannerimg, .imgbiog, .cvimg
 {
 	width: 100%;
 }
+/*The texts within the div are centrally aligned and the div has width of 100%.*/
 .text
 {
 	width: 100%;
 	text-align: center;
 }
+/*The paragraph within the div with class text has been provided padding of 5% from sides and color.*/
 .text p
 {
 	padding: 0 5%;
 	color: #264356;
 }
-
+/*The texts within the marquee tag are in red color.*/
 marquee
 {
 	color: red;
 }
+/*The div has width of 100% and the contents within it are displayed in row and background color has been assigned.
+The contents have equal space from all sides.*/
 .links
 {
 	width: 100%;
@@ -107,16 +137,19 @@ marquee
 	justify-content: space-around;
 	background-color:#081c28;
 }
+/*All divs with class box1 are of width 30% and have top and bottom margin of 1%.*/
 .box1
 {
 	width: 30%;
 	margin: 1% 0;
 }
+/*Thee underordered list are given list style type of sqaure.*/
 .box1 ul
 {
 	list-style-type:square;
 }
-
+/*The anchor tag contents of the div box1 are padded 2% from all sides with font size 17px and text decoration
+is removed.*/
 .box1 ul li a
 {
 	padding: 2%;
@@ -124,23 +157,27 @@ marquee
 	font-size:17px;
 	text-decoration: none;
 }
-
+/*On hovering, the list items of .box1 div changes color to white.*/
 .box1 ul li a:hover
 {
 	color: white;
 }
+/*The heading of the .box1 div is underlined and text shadow 2px from vertical and horizontal is assigned with 4px shadow
+opacity in black color.*/
 .box1 h2
 {
 	text-decoration: underline;
 	color: #cc9c80;
 	text-shadow: 3px 3px 4px black;
 }
+/*The footer has no margin and padding value but width of 100%.*/
 footer
 {
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 }
+/*The paragraph of footer has no margin, 0.2% top-bottom padding, bold font weight and black background color.*/
 footer p
 {
 	margin:0;
@@ -154,7 +191,10 @@ footer p
 }
 
 
-/*CSS FOR contacr.html*/
+/*CSS FOR contact.html*/
+
+/*The div has 0.2% margin from bottom and 100% width. The contents within the div are displayed in row
+using the flex property and are centralized.*/
 .contactsection
 {
 	margin: 0 auto;
@@ -164,15 +204,18 @@ footer p
 	margin-bottom: 0.2%;
 	justify-content: center;
 }
-
+/*Elements inside the input tag are padded 1.2% from top and bottom and 7% from sides.
+The field also has border-radius of 4px.*/
 input
 {
 	padding: 1.2% 7%;
 	border-radius: 4px;
 }
+/*The textarea is goven border radius of 4px;*/
 textarea{
 	border-radius: 4px;
 }
+/*Texts within the legend tag are 34px size and bolder font weight.*/
 legend
 {
 	font-family: Cordia New;
@@ -180,6 +223,8 @@ legend
 	font-weight: bolder;
 	color:#000f1e;
 }
+/*The div has border radius of 3px and no borders. The font size of the text within the div
+is 30px and bold font weight. The texts are padded 1% from top and bottom and 5% from either sides.*/
 .submit
 {
 	padding: 1% 5%;
@@ -190,6 +235,8 @@ legend
 	font-size:30px;
 	font-weight: bold;
 }
+/*On hovering this div, box shadow is applied 4px each horizontally and vertically and shadow has 5px opacity.
+The texts are padded 1.5% from top and bottom and 2% from sides.*/
 .submit:hover
 {
 	box-shadow: 4px 4px 5px black;
@@ -197,31 +244,40 @@ legend
 	background-color: #4c7093;
 	text-shadow: 2px 2px 3px black;
 }
+/*Fieldset applied has a border radius of 5px.*/
 fieldset
 {
 	border-radius: 5px;
 }
+/*The div has width of 100%. The elements within it are displayed in column using flex property.*/
 .cont{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
+/*The div has a width of 100% and 10% height.*/
 .headcon
 {
 	width: 100%;
 	height: 10%;
 }
+/*The heading within the div is aligned center with text shadow of 3px from horizontal and vertical directions
+and 3px grey color opacity for shadow. The font size is 30px; Google API font has been used*/
 .headcon h2
 {
 	text-align: center;
 	text-shadow: 3px 3px 3px grey;
-	font-size: 30px;font-family: monospace;
+	font-size: 30px;
 	color: black;
+	font-family: 'Handlee', cursive;
 }
+/*On hovering the heading, the text color changes.*/
 .headcon h2:hover
 {
 	color: #372c49;
 }
+/*The div has margin of 0.3% from bottom and 100% width. The elements within the div are displayed in column
+using flex property.*/
 .callandloc
 {
 	margin-bottom: 0.3%;
@@ -230,11 +286,12 @@ fieldset
 	flex-direction: row;
 	justify-content: center;
 }
+/*The elements within anchor tag are provided sideways margin of 0.2%.*/
 .callandloc a
 {
 	margin: 0 0.2%;
 }
-
+/*The div reduces opacity to 0.8 on hovering.*/
 .call:hover
 {
 	opacity: 0.8;
@@ -243,6 +300,8 @@ fieldset
 
 /*CSS FOR bio.html*/
 
+/*The div has width of 90% centralized and bottom margin of 2%. The contents within it are displayed in column
+uisng flex property.*/
 .biosection
 {
 	margin: 0 auto;
@@ -251,62 +310,73 @@ fieldset
 	display: flex;
 	flex-direction: column;
 }
+/*The div has width of 100% of its parent div. The text within it are aligned center.*/
 .biohead
 {
 	width: 100%;
 	text-align: center;
 }
-
+/*On hovering the heading if the div, the color changes.*/
 .biohead h2:hover
 {
 	color: tomato;
 }
+/*The div has 100% width and elements within it are displayed in column using flex property.*/
 .biointro
 {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-
+/*On hovering the div, the opacity is reduced to 0.8.*/
 }
 .imgbio:hover
 {
 	opacity: 0.8;
 }
+/*The width of this div is given 23% and has border of 1px from all sides in solid form in grey color.
+Box shadow of 3px from vertial and horizontal direction are supplied with 3px opacity of grey color.*/
 .imgbio
 {
 	width: 23%;
 	border: 1px solid grey;
 	box-shadow:3px 3px 3px grey;
 }
+/*The div has a width of 77% and texts are justified.*/
 .texts
 {
 	width: 77%;
 	text-align: justify;
 }
+/*The paragraph within the div has padding of 0.3% from top, 3% from right and left and 0% from bottom.*/
 .texts p{
 	padding: 0.3% 3% 0% 3%;
 	color: #372c49;
 }
+/*On hovering the paragraph, the text color changes.*/
 .texts p:hover{
 	color: #7f5b11;
 }
+/*The div has margin of 1% from top and width 100% with top border 1px in solid line in grey color.*/
 .bottombio
 {
 	margin-top: 1%;
 	width: 100%;
 	border-top: 1px solid grey;
 }
+/*The headings within the divs are aligned center with Google API font in 24px font size.*/
 .bottombio h2, .biohead h2
 {
 	text-align: center;
-	font-family: Cordia New;
-	font-size: 30px;
+	font-family: 'Handlee', cursive;
+	font-size: 24px;
 	color:#201d25
 }
+/*The paragraph within the div is aligned center.*/
 .bottombio p{
 	text-align: center;
 	color: #201d25;
 }
+/*On hovering over the paragraphs within the divs, color of the text changes.*/
 .bottombio p:hover, .bottombio h2:hover{
 	color: #993232;
 }
@@ -314,6 +384,8 @@ fieldset
 
 /*CSS for cv.html*/
 
+/*The div has 100% width and elements within it are displayed in column using flex property.
+The margin of 1% from bottom has been given.*/
 .cvsec
 {
 	width: 100%;
@@ -321,12 +393,16 @@ fieldset
 	flex-direction: column;
 	margin-bottom: 1%;
 }
+/*The div has width of 100% and box shadow of 4px from vertical and horizontal directions are given
+with 4px opacity on black color.*/
 .cvhead
 {
 	box-shadow: 4px 4px 4px black;
 	width: 100%;
 	background: #081c28;
 }
+/*The heading within the div has font size of 30px in white color and 2% padding from left side.
+Text shadow of 4px from vertical and horizontal direction are given and 2px opacity in black color.*/
 .cvsec h2
 {
 	font-size: 30px;
@@ -334,6 +410,7 @@ fieldset
 	text-shadow: 4px 4px 2px black;
 	padding: 0 0 0 2%;
 }
+/*The div has width of 90% and contents within it are displayed in column using flex property.*/
 .cvcont
 {
 	margin: 0 auto;
@@ -342,14 +419,17 @@ fieldset
 	flex-direction: row;
 	margin-top: 1.5%;
 }
+/*The div has width of 70%.*/
 .cvleft
 {
 	width: 70%;
 }
+/*The div has with of 30%.*/
 .cvright
 {
 	width: 30%;
 }
+/*The heading within the div has font size 25px, color black and bold font weight. The text is underlined.*/
 .cvleft h2
 {
 	font-size: 25px;
@@ -358,6 +438,7 @@ fieldset
 	font-weight: bold;
 	text-decoration: underline;
 }
+/*The paragraph within the div has left padding of 5% and bold font weight.*/
 .cvleft p{
 	padding-left: 5%;
 	font-weight: bold;
@@ -366,8 +447,10 @@ fieldset
 
 /*Media Queries*/
 
-@media (max-width:600px)
+/*Responsive feature for of browser upto 600px.*/
+@media only screen and (max-width:600px)
 {
+	/*The header has 100% width and elements are displayed at the end in row using flex property.*/
 	header
 	{
 		width: 100%;
@@ -375,124 +458,146 @@ fieldset
 		flex-direction: row;
 		justify-content: flex-end;
 	}
+	/*The div has 100% width*/
 	.banner{
 		width: 100%;
 	}
+	/*The div has width of 100% and box shadow has been removed and solid black color border has been applied at top.*/
 	.menu
 	{
 		width: 100%;
 		box-shadow: none;
 		border-top: 1px solid black;
 	}
+	/*The unordered list are displayed in column using flex. The list items are displayed centrally.*/
 	.menu ul
 	{
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 	}
+	/*The list items have border from bottom of 1px in solid with black color.*/
 	.menu ul li{
 		border-bottom: 1px solid black;
 	}
+	/*The anchor tag elements have 20px font size.*/
 	.menu ul li a{
 		font-size: 20px;
 	}
+	/*On hovering the anchor tag, color of the text changes to white.*/
 	.menu ul li a:hover
 	{
 		color: white;
 	}
+	/*The section has width of 100% and elements within it are displayed in column using flex.*/
 	section
 	{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	/*The div has width of 100%. The elements are displayed in row using flex property.*/
 	.content
 	{
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 	}
+	/*The div has width of 50%.*/
 	.photo
 	{
 		margin: 0 auto;
 		width: 50%;
 	}
+	/*The class has width of 100%*/
 	.contentimg
 	{
 		width: 100%;
 	}
+	/*The paragraph within the div has font size 16px and justified.*/
 	.text p{
 		font-size: 16px;
 		text-align: justify;
 	}
+	/*The div has 100% width with elements displayed in column using fle property.*/
 	.links
 	{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
+	/*The div has 100% width.*/
 	.box1
 	{
 		width: 100%;
 	}
+	/*The heading within the div has padding 2% from left and 20px font size.*/
 	.box1 h2
 	{
 		padding-left: 2%;
 		font-size: 20px;
 	}
-
-
+	/*The div has width of 100% and elements are displayed in column using flex property.*/
 	.biosection
 	{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	/*The div has width of 100%.*/
 	.biohead
 	{
 		width: 100%;
 	}
+	/*The div has width of 100% and elements are displayed in column using flex property.*/
 	.biointro
 	{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	/*The div has width of 100%.*/
 	.texts
 	{
 		width: 100%;
 	}
+	/*The class has with of 45%.*/
 	.imgbio
 	{
 		margin:0 auto;
 		width: 45%;
 	}
+	/*The div has width of 100%;*/
 	.bottombio
 	{
 		width: 100%;
 	}
+	/*The paragraph within the div is padded 0.3% from sides and aligned center.*/
 	.bottombio p{
 		padding: 0 3%;
 		text-align: center;
 	}
-
-
+	/*The div has 100% width and elements within it are displayed in column using flex property.*/
 	.cont{
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
+	/*The div has widt of 100% and backgrund color.*/
 	.headcon
 	{
 		width: 100%;
 		background-color: #081c28;
 	}
+	/*The header within the div is in white color with 25px size and text shadow 3px from horizontal
+	and vertical and 3px opacity in black color.*/
 	.headcon h2
 	{
 		color: white;
 		text-shadow: 3px 3px 3px black;
 		font-size: 25px;
 	}
+	/*The div has 100% width and elements are displayed in row using flex.*/
 	.contactsection
 	{
 		width: 100%;
@@ -500,22 +605,25 @@ fieldset
 		flex-direction: row;
 		justify-content:space-around;;
 	}
+	/*The text area has width of 240px*/
 	textarea
 	{
 		width: 240px;
 	}
-
-
+	/*The div has width of 100% and elemnents are displayed in column using flex.*/
 	.cvsec
 	{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
+	/*The div has 100% width.*/
 	.cvhead
 	{
 		width: 100%;
 	}
+	/*The div has width of 100% and elements are displayed in column reverse using flex.
+	Margin of 6% from top has been applied.*/
 	.cvcont
 	{
 		width: 100%;
@@ -523,23 +631,28 @@ fieldset
 		flex-direction: column-reverse;
 		margin-top: 6%;
 	}
+	/*The div has 50% width.*/
 	.cvright
 	{
 		width: 50%;
 		margin: 0 auto;
 	}
+	/*The div has 100% width.*/
 	.cvleft
 	{
 		width: 100%;
 	}
+	/*The heading within the div has font size 22px and text are aligned to center.*/
 	.cvsec h2
 	{
 		font-size: 22px;
 		text-align: center;
 	}
+	/*The heading within the div has font-size 20px.*/
 	.cvleft h2{
 		font-size: 20px;
 	}
+	/*The paragraph has font size 16px, and black color text and text alignment is set to center.*/
 	.cvleft p{
 		font-size: 16px;
 		text-align: center;
@@ -549,18 +662,22 @@ fieldset
 
 }
 
-
-@media (min-width:601px) and (max-width:800px) {
+/*Responsiveness of browser from width 601px to 800px*/
+@media (min-width:601px) and (max-width:800px)
+{
+	/*The div has width of 100% and elements are displayed in column using flex.*/
 	.links
 	{
 		display: flex;
 		width: 100%;
 		flex-direction: column;
 	}
+	/*The div has 100% width.*/
 	.box1
 	{
 		width: 100%;
 	}
+	/*The heading within the div has padding 2% from left and font size 21px.*/
 	.box1 h2
 	{
 		padding-left: 2%;
@@ -568,24 +685,29 @@ fieldset
 	}
 }
 
-	@media (max-width:1340px) and (min-width:601px)
+/*Responsiveness of browser from width 601px to 1340px*/
+@media (max-width:1340px) and (min-width:601px)
 	{
+		/*The div has width of 100% and elements within it are displayed in column using flex.*/
 		.biosection
 		{
 			display: flex;
 			flex-direction: column;
 			width: 100%;
 		}
+		/*The div has widthh of 100%.*/
 		.biohead
 		{
 			width: 100%;
 		}
+		/*The div has width of 100% and elements within it are displayed in column using flex.*/
 		.biointro
 		{
 			display: flex;
 			flex-direction: column;
 			width: 100%;
 		}
+		/*The class has width of 30%*/
 		.imgbio
 		{
 			margin:0 auto;
@@ -593,36 +715,42 @@ fieldset
 			border: none;
 			box-shadow: none;
 		}
+		/*The div has 100% width*/
 		.texts{
 			width: 100%;
 		}
 	}
 
-
-	@media (max-width:1130px) and (min-width:601px)
+/*Responsiveness of browser from width 601px to 1130px*/
+@media (max-width:1130px) and (min-width:601px)
 	{
+		/*The div has width of 100% and elements are displayed in column using flex property.*/
 		.cvsec
 		{
 			width: 100%;
 			display: flex;
 			flex-direction: column;
 		}
+		/*The div has width of 100% and texts are aligned center.*/
 		.cvhead
 		{
 			width: 100%;
 			text-align: center;
 		}
+		/*The div has width of 100% and elements are displayed in reverse order in column using flex property.*/
 		.cvcont
 		{
 			display: flex;
 			flex-direction: column-reverse;
 			width: 100%;
 		}
+		/*The div has width of 30%.*/
 		.cvright
 		{
 			margin: 0 auto;
 			width: 30%;
 		}
+		/*The div has width of 100%.*/
 		.cvleft
 		{
 			width: 100%;
