@@ -81,6 +81,17 @@ with 4px of shadow opacity in grey color.*/
   text-shadow: 3px 3px 4px #222;
   text-decoration: none;
 }
+/*The property is used for animation. The cloe of the text changes from black to white*/
+@keyframes example {
+    from {color: black;}
+    to {color: white;}
+}
+/*On hovering, the animation takes plac within 4 seconds*/
+.menu ul li a:hover
+{
+	animation-name: example;
+	animation-duration: 4s;
+}
 /*The section has a full width of 100% and the items within it are displayed in column with flex property.*/
 section
 {
