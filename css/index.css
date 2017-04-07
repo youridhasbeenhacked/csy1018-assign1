@@ -348,8 +348,6 @@ Box shadow of 3px from vertial and horizontal direction are supplied with 3px op
 .imgbio
 {
 	width: 23%;
-	border: 1px solid grey;
-	box-shadow:3px 3px 3px grey;
 }
 /*The div has a width of 77% and texts are justified.*/
 .texts
